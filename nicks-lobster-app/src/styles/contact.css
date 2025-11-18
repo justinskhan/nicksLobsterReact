@@ -1,6 +1,6 @@
 :root 
 { 
-  --nav-height-fallback: 120px; 
+  --nav-height-fallback: 80px; 
 }
 
 .about-section 
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; 
-  padding-top: calc(var(--nav-height, var(--nav-height-fallback)) + 18px);
+  padding-top: 450px;
   padding-left: 16px;
   padding-right: 16px;
   box-sizing: border-box;
@@ -28,13 +28,14 @@
 {
   margin-bottom: 10px;
   font-size: clamp(24px, 4vw, 40px);
+  color: #000000;
 }
 
 .about-content p 
 {
   margin-bottom: 14px;
   line-height: 1.5;
-  color: #222;
+  color: #000000;
 }
 
 .about-content img 
@@ -50,7 +51,8 @@
 {
   .about-section 
   {
-    padding-top: calc(var(--nav-height, var(--nav-height-fallback)) + 10px);
+    /* slightly smaller padding on mobile */
+    padding-top: 100px;
   }
   .about-content 
   {

@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { CartContext } from "../context/CartContext";
 
-export default function Cart() {
+export default function Cart() 
+{
   const { cart } = useContext(CartContext);
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);

@@ -1,11 +1,9 @@
-// src/components/Footer.jsx
+
 export default function Footer() {
   return (
     <div className="footerContainer">
       <div className="footer">
-        {/* picture first so it appears on the left */}
         <div className="footerPicture">
-          {/* Use an image that exists in the public/images folder */}
           <img src="/images/footerPic (1).png" alt="Dish" />
         </div>
 

@@ -4,7 +4,8 @@ import Footer from "../components/Footer";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
-export default function Menu() {
+export default function Menu() 
+{
   const { addToCart } = useContext(CartContext);
 
   // You can expand this with all your real menu items
