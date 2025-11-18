@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header() 
+{
   return (
-    <nav className="navbar">
+    <nav>
       <div className="myLogo">
         <img src="/images/icon.png" alt="Nick's Lobster Logo" />
       </div>

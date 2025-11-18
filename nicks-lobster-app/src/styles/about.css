@@ -39,7 +39,7 @@
 
 .about-content img 
 {
-  display: flex;
+  display: block;
   max-width: 100%;
   height: auto;
   margin-top: 12px;

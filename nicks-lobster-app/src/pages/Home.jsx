@@ -1,17 +1,34 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home() 
+{
   return (
     <>
       <Header />
       <section id="Front" className="home-section">
-        <div className="hero">
-          <h1>Welcome to Nick's Lobster</h1>
-          <p>Fresh seafood, cooked to perfection.</p>
+        <div className="myMain">
+          <div className="heroImg">
+            <img src="/images/hero.jpg" alt="Hero" />
+          </div>
+
+          <div className="heroText">
+            <h1>
+              Nick's Lobster House
+              <br />Serving Brooklyn
+              <br />Fresh Seafood
+              <br />Since 1955
+            </h1>
+            <div className="orderNow">
+              <Link to="/menu">Order Now</Link>
+            </div>
+          </div>
         </div>
       </section>
+      
       <Footer />
+
     </>
   );
 }

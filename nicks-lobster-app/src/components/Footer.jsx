@@ -1,7 +1,30 @@
+// src/components/Footer.jsx
 export default function Footer() {
   return (
-    <footer className="footer">
-      <p>© 2025 Nick’s Lobster</p>
-    </footer>
+    <div className="footerContainer">
+      <div className="footer">
+        {/* picture first so it appears on the left */}
+        <div className="footerPicture">
+          {/* Use an image that exists in the public/images folder */}
+          <img src="/images/footerPic (1).png" alt="Dish" />
+        </div>
+
+        <div className="footerHeader1">
+          <h2>Nick’s Lobster</h2>
+          <p>Fresh seafood served daily in Brooklyn.</p>
+        </div>
+
+        <div className="footerHeader2">
+          <h2>Hours</h2>
+          <p>Mon–Sun: 11:00 AM – 9:00 PM</p>
+        </div>
+
+        <div className="footerHeader3">
+          <h2>Contact</h2>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: support@nickslobster.com</p>
+        </div>
+      </div>
+    </div>
   );
 }
