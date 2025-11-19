@@ -8,9 +8,8 @@ export default function Menu()
 {
   const { addToCart } = useContext(CartContext);
 
-  // You can expand this with all your real menu items
   const items = [
-    { id: 1, name: "Nick's Lobster Roll", price: 42, image: "images/lobsterRoll.webp" },
+    { id: 1, name: "Lobster Roll", price: 42, image: "images/lobsterRoll.webp" },
     { id: 2, name: "Lobster Tail", price: 50, image: "images/lobsterTail.webp" },
     { id: 3, name: "Fried Calamari", price: 20, image: "images/friedCalamari.avif" },
     { id: 4, name: "Mussels", price: 22, image: "images/mussels.avif" },
@@ -25,14 +24,22 @@ export default function Menu()
     <>
       <Header />
       <h2 className="page-title">Menu</h2>
-
+      {/* display for items */}
       <div className="menu-container">
         {items.map((item) => (
           <div className="menu-item" key={item.id}>
             <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>${item.price}</p>
-            <button onClick={() => addToCart({ ...item, quantity: 1 })}>
+            <div className="menu-item-info">
+              <h3 className="menu-item-name">{item.name}</h3>
+              <p className="menu-item-price">${item.price.toFixed(2)}</p>
+            </div>
+            <button
+              className="add-to-cart"
+              onClick={() => {
+                addToCart({ ...item, quantity: 1 });
+                alert(`${item.name} has been added to cart!`);
+              }}
+            >
               Add to Cart
             </button>
           </div>

@@ -12,7 +12,7 @@ export default function Home()
           <div className="heroImg">
             <img src="/images/hero.jpg" alt="Hero" />
           </div>
-
+          {/* should be in front of the image to the left */}
           <div className="heroText">
             <h1>
               Nick's Lobster House

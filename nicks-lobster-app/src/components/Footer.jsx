@@ -1,13 +1,14 @@
 
-export default function Footer() {
+export default function Footer() 
+{
   return (
     <div className="footerContainer">
       <div className="footer">
-        <div className="footerPicture">
-          <img src="/images/footerPic (1).png" alt="Dish" />
+        <div className="footerPicture"> {/* picture in footer*/}
+          <img src="/images/footerPic (1).png"/>
         </div>
 
-        <div className="footerHeader1">
+        <div className="footerHeader1"> 
           <h2>Nick’s Lobster</h2>
           <p>Fresh seafood served daily in Brooklyn.</p>
         </div>
