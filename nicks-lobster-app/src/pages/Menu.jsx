@@ -32,7 +32,6 @@ export default function Menu()
             <img src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>${item.price}</p>
-
             <button onClick={() => addToCart({ ...item, quantity: 1 })}>
               Add to Cart
             </button>
