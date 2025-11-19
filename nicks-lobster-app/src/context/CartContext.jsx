@@ -4,18 +4,17 @@ export function CartProvider({ children })
 {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (item) => { {/*func to add item */}
+  const addToCart = (item) => {
     setCart((prev) => {
       const existing = prev.find((cartItem) => cartItem.id === item.id);
-      if (existing) {/* if already there increase quantity */}
-      {
-        return prev.map((cartItem) => 
+      if (existing) {
+        return prev.map((cartItem) =>
           cartItem.id === item.id
-            ? { ...cartItem, quantity: (cartItem.quantity || 1) + (item.quantity || 1) } 
+            ? { ...cartItem, quantity: (cartItem.quantity || 1) + (item.quantity || 1) }
             : cartItem
         );
       }
-      return [...prev, { ...item, quantity: item.quantity || 1 }]; {/* if new add new section */}
+      return [...prev, { ...item, quantity: item.quantity || 1 }];
     });
   };
 
