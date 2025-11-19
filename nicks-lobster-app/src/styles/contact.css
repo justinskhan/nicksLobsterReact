@@ -3,9 +3,9 @@
   --nav-height-fallback: 80px; 
 }
 
-.about-section 
+.aboutSection
 {
-  
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-start; 

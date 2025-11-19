@@ -7,7 +7,7 @@ export default function Contact()
   return (
     <>
       <Header />
-      <section className="about-section">
+      <section className="aboutSection">
         <div className="about-content">
           <h1>Contact</h1>
           <p>

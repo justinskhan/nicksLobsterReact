@@ -10,9 +10,15 @@ export default function Menu()
 
   // You can expand this with all your real menu items
   const items = [
-    { id: 1, name: "Lobster Roll", price: 15, image: "/images/lobsterroll.jpg" },
-    { id: 2, name: "Chowder", price: 10, image: "/images/chowder.jpg" },
-    { id: 3, name: "Shrimp", price: 12, image: "/images/shrimp.jpg" },
+    { id: 1, name: "Nick's Lobster Roll", price: 42, image: "images/lobsterRoll.webp" },
+    { id: 2, name: "Lobster Tail", price: 50, image: "images/lobsterTail.webp" },
+    { id: 3, name: "Fried Calamari", price: 20, image: "images/friedCalamari.avif" },
+    { id: 4, name: "Mussels", price: 22, image: "images/mussels.avif" },
+    { id: 5, name: "Clams Oreganata", price: 30, image: "images/clamsOreganata.jpeg" },
+    { id: 6, name: "Grilled Branzino", price: 38, image: "images/grilledBranzino.jpg" },
+    { id: 7, name: "Stuffed Shrimp", price: 44, image: "images/stuffedShrimp.jpg" },
+    { id: 8, name: "NY Strip Steak", price: 40, image: "images/steak.avif" },
+    { id: 9, name: "Surf and Turf", price: 96, image: "images/surfTurf.avif" }
   ];
 
   return (
